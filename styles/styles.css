@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1125px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -84,6 +84,7 @@ nav ul li:not(:last-child) {
 .row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-info p {
@@ -94,7 +95,7 @@ nav ul li:not(:last-child) {
 .btn {
   background-color: #d8b152;
   display: inline-block;
-  color: inherit;
+  color: #fff;
   text-align: center;
   padding: 18px 55px;
   width: 260px;
@@ -103,6 +104,66 @@ nav ul li:not(:last-child) {
 .menu-icon {
   display: none;
   margin: 0;
+}
+
+/* SERVICES */
+
+.services {
+  padding: 60px 0 120px;
+}
+
+.small-title {
+  color: #424242;
+  font-size: 46px;
+  line-height: 63px;
+  margin: 60px 0;
+}
+
+.col-3 {
+  position: relative;
+}
+
+.col-3 img {
+  width: 350px;
+  height: 350px;
+}
+
+.shaded-img-wrapper {
+  transition: linear 0.5s;
+  filter: saturate(30%);
+}
+
+.image-text {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.shaded-img-wrapper:hover {
+  filter: none;
+}
+
+.col-3:hover .service-btn {
+  display: block;
+}
+
+.col-3:hover .image-text {
+  top: 45%;
 }
 
 /* MEDIA QUERIES */
@@ -137,5 +198,10 @@ nav ul li:not(:last-child) {
 
   .header h1 {
     font-size: 25px;
+  }
+
+  .col-3 img {
+    width: 300px;
+    height: 300px;
   }
 }
