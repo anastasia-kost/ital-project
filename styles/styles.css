@@ -84,7 +84,14 @@ nav ul li:not(:last-child) {
 .row {
   display: flex;
   align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.header .row {
+  flex-wrap: nowrap;
 }
 
 .header-info p {
@@ -109,7 +116,7 @@ nav ul li:not(:last-child) {
 /* SERVICES */
 
 .services-section {
-  padding: 60px 0 120px;
+  padding: 60px 0 80px;
 }
 
 .small-title {
@@ -190,6 +197,28 @@ nav ul li:not(:last-child) {
   }
 }
 
+/* Join-us */
+
+.col-4 img {
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.join-section .btn {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .header .row {
+    flex-wrap: wrap;
+  }
+
+  .col-4 {
+    flex-basis: 50%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .row {
     flex-direction: column;
@@ -203,5 +232,10 @@ nav ul li:not(:last-child) {
   .col-3 img {
     width: 300px;
     height: 300px;
+  }
+
+  .col-4 img {
+    width: 140px;
+    height: 140px;
   }
 }
