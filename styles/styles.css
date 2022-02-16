@@ -324,6 +324,54 @@ nav ul li:not(:last-child) {
 
 /* FORM */
 
+.form {
+  margin: 60px auto 120px;
+  display: flex;
+  justify-content: center;
+  max-width: 360px;
+  gap: 40px;
+}
+
+.text {
+  margin-top: -20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.form-col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-basis: 30%;
+}
+
+.form-col-1 input {
+  border: 1px solid #aea38b;
+  padding: 18px 30px;
+}
+
+.form-col-2 {
+  flex-basis: 70%;
+}
+
+.form-col-2 textarea {
+  resize: none;
+  border-color: #aea38b;
+  padding: 18px 30px;
+}
+
+.form input::placeholder,
+textarea::placeholder {
+  font-family: inherit;
+  color: #424242;
+  font-size: 18px;
+  line-height: 24px;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
