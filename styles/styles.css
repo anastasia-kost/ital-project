@@ -31,6 +31,10 @@ a {
   color: #fff;
 }
 
+.header-black nav {
+  color: #202020;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -56,7 +60,7 @@ nav ul li:not(:last-child) {
 
 .nav-link {
   font-weight: 400;
-  color: #fff;
+  color: inherit;
   font-size: 18px;
   line-height: 25px;
 }
