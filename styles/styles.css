@@ -355,7 +355,7 @@ nav ul li:not(:last-child) {
   display: none;
 }
 
-.form-col-1 input {
+.input {
   border: 1px solid #aea38b;
   padding: 18px 30px;
 }
@@ -372,7 +372,7 @@ nav ul li:not(:last-child) {
   height: 100%;
 }
 
-.form input::placeholder,
+.input::placeholder,
 textarea::placeholder {
   font-family: inherit;
   color: #424242;
@@ -380,7 +380,7 @@ textarea::placeholder {
   line-height: 24px;
 }
 textarea:focus,
-input:focus {
+.input:focus {
   outline: none;
 }
 
@@ -428,6 +428,51 @@ input:focus {
   height: 1px;
   background-color: #aea38b;
   border: none;
+}
+
+/* HOUSES */
+
+.houses-section {
+  padding-top: 20px;
+}
+
+.houses-section .image-text {
+  display: none;
+}
+
+.col-3:hover .image-text {
+  display: block;
+}
+
+.house-image:hover {
+  filter: sepia(70%);
+}
+
+/* PREFOOTER */
+
+.prefooter-section {
+  background-color: #aea38b;
+  padding: 100px 0;
+  color: #fff;
+}
+.prefooter-section .row {
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.small-title-white {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.prefooter-section .input {
+  background-color: transparent;
+  border: 2px solid #fff;
+  flex-basis: 30%;
+}
+
+.prefooter-section .input::placeholder {
+  color: #fff;
 }
 
 /* MEDIA QUERIES */
@@ -568,7 +613,7 @@ input:focus {
     gap: 20px;
   }
 
-  .form-btn {
+  .form-btn-desctop {
     display: none;
   }
 
@@ -587,5 +632,23 @@ input:focus {
     max-width: 350px;
     width: 100%;
     margin-top: 20px;
+  }
+
+  .houses-section .row {
+    padding-bottom: 0;
+  }
+
+  .house-image {
+    margin-bottom: 30px;
+  }
+
+  .prefooter-section .row {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .prefooter-section .input {
+    max-width: 350px;
+    width: 100%;
   }
 }

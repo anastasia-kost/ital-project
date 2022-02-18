@@ -11,10 +11,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <title>ITAL Project</title>
   </head>
   <body>
@@ -40,46 +36,75 @@
       </div>
     </header>
 
-    <!-- REVIEWS Slider -->
-
-    <div class="reviews-section">
+    <div class="houses-section">
       <div class="container">
-        <h2 class="small-title">Отзывы наших клиентов</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/review-img.jpeg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/review-img.jpeg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/review-img.jpeg" alt="" />
-            </div>
+        <h2 class="small-title">Загородные дома</h2>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/house-img1.jpeg" class="house-image" />
+            <p class="image-text">Уютный стиль</p>
           </div>
-          <div class="swiper-button-next slider-button"></div>
-          <div class="swiper-button-prev slider-button"></div>
+
+          <div class="col-3">
+            <img src="images/house-img2.jpeg" class="house-image" />
+            <p class="image-text">Удобный пригород</p>
+          </div>
+
+          <div class="col-3">
+            <img src="images/house-img3.jpeg" class="house-image" />
+            <p class="image-text">Летняя резиденция</p>
+          </div>
         </div>
-      </div>
-
-      <div class="container">
-        <h2 class="small-title">Заказывали проект у нас?</h2>
-        <p class="text">
-          Оставьте ваш отзыв в форме ниже и мы его опубликуем на нашем сайте
-        </p>
-        <div class="form">
-          <div class="form-col-1">
-            <input type="name" placeholder="Ваше имя" class="input" />
-            <input type="phone" placeholder="Номер телефона" class="input" />
-            <a href="#" class="btn form-btn form-btn-desctop">Отправить</a>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/house-img4.jpeg" class="house-image" />
+            <p class="image-text">Лесная сказка</p>
           </div>
-          <div class="form-col-2">
-            <textarea placeholder="Ваш отзыв"></textarea>
-            <a href="#" class="btn form-btn form-btn-mob">Отправить</a>
+
+          <div class="col-3">
+            <img src="images/house-img5.jpeg" class="house-image" />
+            <p class="image-text">Горная дорога</p>
+          </div>
+
+          <div class="col-3">
+            <img src="images/house-img6.jpeg" class="house-image" />
+            <p class="image-text">Цветочная поляна</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/house-img7.jpeg" class="house-image" />
+            <p class="image-text">Современный уют</p>
+          </div>
+
+          <div class="col-3">
+            <img src="images/house-img8.jpeg" class="house-image" />
+            <p class="image-text">Маленькая Англия</p>
+          </div>
+
+          <div class="col-3">
+            <img src="images/house-img9.jpeg" class="house-image" />
+            <p class="image-text">Наедине с природой</p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- PreFooter Section -->
+    <div class="prefooter-section">
+      <div class="container">
+        <h2 class="small-title small-title-white">Хотели бы загородный дом?</h2>
+        <p class="text text-white">
+          Оставьте заявку на сайте, и мы вам перезвоним в течение 15 минут
+        </p>
+        <div class="row">
+          <input type="name" placeholder="Ваше имя" class="input" />
+          <input type="phone" placeholder="Номер телефона" class="input" />
+          <a href="#" class="btn form-btn">Отправить</a>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
@@ -134,15 +159,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
 </html>
