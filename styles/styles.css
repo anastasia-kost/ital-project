@@ -109,7 +109,7 @@ nav ul li:not(:last-child) {
   color: #fff;
   text-align: center;
   padding: 18px 55px;
-  width: 260px;
+  max-width: 260px;
 }
 
 .menu-icon {
@@ -280,8 +280,9 @@ nav ul li:not(:last-child) {
 
 /* slider */
 
-.reviews {
+.reviews-section {
   position: relative;
+  padding-top: 60px;
 }
 .swiper {
   width: 100%;
@@ -325,11 +326,11 @@ nav ul li:not(:last-child) {
 /* FORM */
 
 .form {
-  margin: 60px auto 120px;
   display: flex;
-  justify-content: center;
-  max-width: 360px;
+  justify-content: space-between;
   gap: 40px;
+  margin-bottom: 100px;
+  margin-top: 20px;
 }
 
 .text {
@@ -345,6 +346,11 @@ nav ul li:not(:last-child) {
   flex-basis: 30%;
 }
 
+.form-btn {
+  max-width: 350px;
+  width: 100%;
+}
+
 .form-col-1 input {
   border: 1px solid #aea38b;
   padding: 18px 30px;
@@ -358,6 +364,8 @@ nav ul li:not(:last-child) {
   resize: none;
   border-color: #aea38b;
   padding: 18px 30px;
+  width: 100%;
+  height: 100%;
 }
 
 .form input::placeholder,
@@ -437,6 +445,10 @@ input:focus {
     border-top: 1px solid #d8b152;
     border-bottom: 1px solid #d8b152;
   }
+
+  .swiper-slide img {
+    max-width: 400px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -483,5 +495,17 @@ input:focus {
     width: 110px;
     height: 110px;
     padding: 0;
+  }
+
+  .swiper-slide img {
+    max-width: 250px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form-btn {
+    order: 4;
   }
 }
