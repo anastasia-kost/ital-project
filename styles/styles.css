@@ -483,7 +483,7 @@ input:focus {
 
   .footer-col-3 h3,
   .footer-col-4 h3,
-  hr {
+  .footer hr {
     display: none;
   }
 
@@ -499,6 +499,11 @@ input:focus {
   .swiper-slide img {
     max-width: 400px;
   }
+
+  .award-row h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -513,7 +518,7 @@ input:focus {
 
   .small-title {
     color: #424242;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 32px;
     margin-bottom: 20px;
   }
@@ -569,6 +574,18 @@ input:focus {
 
   .form-btn-mob {
     display: inline-block;
+    margin-top: 20px;
+  }
+
+  .award-row {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 20px;
+  }
+
+  .award-row .btn {
+    max-width: 350px;
+    width: 100%;
     margin-top: 20px;
   }
 }
