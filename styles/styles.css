@@ -469,6 +469,7 @@ textarea:focus,
   background-color: transparent;
   border: 2px solid #fff;
   flex-basis: 30%;
+  color: #fff;
 }
 
 .prefooter-section .input::placeholder {
