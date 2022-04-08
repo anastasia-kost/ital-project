@@ -560,6 +560,17 @@ textarea:focus,
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  .row-mob {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .row-mob img {
+    margin: 0 auto;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   nav ul {
@@ -746,5 +757,10 @@ textarea:focus,
   .publications-col:nth-child(even) {
     border: none;
     padding-left: 0;
+  }
+
+  .about-section .row {
+    flex-direction: column;
+    align-items: center;
   }
 }
