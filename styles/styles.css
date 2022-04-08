@@ -108,7 +108,7 @@ nav ul li:not(:last-child) {
   display: inline-block;
   color: #fff;
   text-align: center;
-  padding: 18px 55px;
+  padding: 18px 54px;
   max-width: 260px;
 }
 
@@ -337,6 +337,7 @@ nav ul li:not(:last-child) {
   margin-top: -20px;
   font-size: 18px;
   line-height: 24px;
+  color: #424242;
 }
 
 .form-col-1 {
@@ -557,6 +558,26 @@ textarea:focus,
   text-align: center;
   font-weight: 600;
   max-width: 960px;
+}
+
+/* SERVICES-SECTION */
+
+.services-row {
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.services-img {
+  max-width: 360px;
+  max-height: 220px;
+}
+
+.services-row .col-3 {
+  text-align: center;
+}
+
+.services-text {
+  margin-top: 20px;
 }
 
 /* MEDIA QUERIES */
